@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Trade+Winds&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body{
+  background: #dfecff;
+  color: #7f8db0;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.product_wrap{
+  display: flex;
+  width: 950px;
+  margin: 100px auto;
+}
+
+.product_item{
+  width: 300px;
+  background: #fff;
+  margin-right: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 0 2px rgba(0,0,0,0.125);
+}
+
+.product_item:last-child{
+  margin-right: 0;
+}
+
+.product_item .img img{
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.product_item .size_color{
+  margin: 25px 0;
+}
+
+.product_item .size_color .title{
+  margin-bottom: 10px;
+}
+
+.product_item .size_wrap ul{
+  display: flex;
+  justify-content: center;
+}
+
+.product_item .size_wrap li{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  border: 1px solid #7f8db0;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product_item .size_wrap li span{
+  font-size: 14px;
+}
+
+.product_item .size_wrap li:hover{
+  background: #7f8db0;
+  color: #fff;
+}
+
+.product_item .price{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.product_item .color_wrap ul{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.product_item .color_wrap ul li{
+  width: 22px;
+  height: 22px;
+  background: #000;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product_item .color_wrap ul li.active{
+  width: 30px;
+  height: 30px;
+}
